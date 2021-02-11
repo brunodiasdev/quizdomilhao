@@ -1,8 +1,11 @@
 #corpo{
     background-color: blue;
-    width: 100%;
-    height: 390px;
+    background-image: linear-gradient( to bottom, blue 40%, white);;
+    background-size: cover;
+    /*width: 100%;
+    height: 390px;*/
     font-size: 12px;
+    padding-bottom: 10px;
 }
 /*Configuração do topo, onde se observará a faze do Jogo e o valor do prêmio*/
 .topo{
@@ -34,7 +37,7 @@
     color: white;
 }
 .letraA{
-    border: solid 1px white;
+    border: solid 2px white;
     display: inline-block;
     width: 25px;
     text-align: center;
@@ -43,7 +46,7 @@
     margin-left: 5px;
 }
 .respostaA{
-    border: solid 1px white;
+    border: solid 2px white;
     display: inline-block;
     text-align: center;
     padding: 0px 5px;
@@ -58,7 +61,7 @@
     margin-top: 3px;
 }
 .letraB{
-    border: solid 1px white;
+    border: solid 2px white;
     display: inline-block;
     width: 25px;
     text-align: center;
@@ -67,7 +70,7 @@
     margin-left: 5px;
 }
 .respostaB{
-    border: solid 1px white;
+    border: solid 2px white;
     display: inline-block;
     text-align: center;
     padding: 0px 5px;
@@ -82,7 +85,7 @@
     margin-top: 3px;
 }
 .letraC{
-    border: solid 1px white;
+    border: solid 2px white;
     display: inline-block;
     width: 25px;
     text-align: center;
@@ -91,7 +94,7 @@
     margin-left: 5px;
 }
 .respostaC{
-    border: solid 1px white;
+    border: solid 2px white;
     display: inline-block;
     text-align: center;
     padding: 0px 5px;
@@ -106,7 +109,7 @@
     margin-top: 3px;
 }
 .letraD{
-    border: solid 1px white;
+    border: solid 2px white;
     display: inline-block;
     width: 25px;
     text-align: center;
@@ -115,7 +118,7 @@
     margin-left: 5px;
 }
 .respostaD{
-    border: solid 1px white;
+    border: solid 2px white;
     display: inline-block;
     text-align: center;
     padding: 0px 5px;
@@ -125,4 +128,22 @@
     margin-left: 5px;
     height: auto;
     width: 130px;
+}
+
+/* parte final o botão de entrega */
+.fim{
+    margin: 5px;
+    text-align: center;
+}
+.botao{
+    margin-top: 5px;
+    width: 100px;
+    height: 30px;
+    background-color: yellow;
+    border-radius: 50px;
+}
+.botao:active{
+    background-color: blue;
+    color: white;
+    transition: 0.1s;
 }
