@@ -16,8 +16,8 @@ const perguntas = [
 ]
 
 function inicio(obj){
-    var n = document.getElementsByClassName(respostaA)
-    n = obj.innerHTML = p1[0]
+    var n = document.getElementsByClassName("respostaA")
+    n.innerHTML = 'casadddd'
     return n
 }
 
