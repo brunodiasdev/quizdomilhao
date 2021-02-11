@@ -24,3 +24,12 @@
     display: inline-block;
     float: right;
 }
+
+/*CONFIGURAÇÃ DAS PERGUNTAS E RESPOSTAS*/
+.pergunta{
+    border: solid 2px white;
+    margin: 20px 10px;
+    padding: 10px;
+    color: white;
+    background-color: red;
+}
