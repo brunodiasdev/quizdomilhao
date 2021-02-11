@@ -147,3 +147,9 @@
     color: white;
     transition: 0.1s;
 }
+/*Botão de iniciar*/
+.comecar{
+    background-color: yellow;
+    width: 100px;
+    margin-left: 5px;
+}
