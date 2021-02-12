@@ -1,5 +1,10 @@
 /*Crianto array de perguntas*/
+let iniproj = document.querySelector('.comecar')
+let perg = document.querySelector('.pergunta')
 
+iniproj.onclick = function(){
+    ini()
+} 
 const perguntas = [
     p1 = [
         pergunta = "Qual sobrenome no Mickey, desenho da Disney?",
@@ -14,11 +19,8 @@ const perguntas = [
         respostas = [ 'Brasil', 'Congo', 'India', 'USA']
     ]
 ]
-
-function inicio(obj){
-    var n = document.getElementsByClassName("respostaA")
-    n.innerHTML = 'casadddd'
-    return n
+function ini(){
+    pergnov = perguntas[0][0]
+    perg.innerHTML = pergnov
 }
-
-console.log(p2[1][3])
+//
