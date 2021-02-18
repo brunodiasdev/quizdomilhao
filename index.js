@@ -20,7 +20,12 @@ const perguntas = [
     ]
 ]
 function ini(){
-    pergnov = perguntas[0][0]
+    pergnov = perguntas[novaPergunta(i)][0]
     perg.innerHTML = pergnov
 }
-//
+function novaPergunta(i){
+    for(i=0; i < perguntas.length; i++){
+        return i
+    }
+
+}
