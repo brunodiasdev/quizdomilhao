@@ -20,12 +20,24 @@ const perguntas = [
     ]
 ]
 function ini(){
-    pergnov = perguntas[novaPergunta(i)][0]
+    pergnov = perguntas[num][0]
     perg.innerHTML = pergnov
 }
-function novaPergunta(i){
-    for(i=0; i < perguntas.length; i++){
+var num = parseInt(variante())
+function variante() {
+   let x = Math.random() * (3 - 0) + 0;
+   let num = x
+   return num
+   
+}
+console.log(num)
+function novaPergunta(){
+    let i = 0
+    return i = Math.random() * (perguntas.length - 0) + 0;
+    
+    /*for(i=0; i < perguntas.length; i++){
         return i
-    }
+    }*/
 
 }
+console.log(perguntas.length)
