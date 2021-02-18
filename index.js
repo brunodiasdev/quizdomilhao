@@ -25,12 +25,11 @@ function ini(){
 }
 var num = parseInt(variante())
 function variante() {
-   let x = Math.random() * (3 - 0) + 0;
+   let x = Math.random() * (this.perguntas.length - 0) + 0;
    let num = x
-   return num
-   
+   return num   
 }
-console.log(num)
+console.log(perguntas)
 function novaPergunta(){
     let i = 0
     return i = Math.random() * (perguntas.length - 0) + 0;
