@@ -32,6 +32,10 @@ function ini(){
     respD.innerHTML = perguntas[num][1][numVar]
 }
 
+function alter(){
+    
+}
+
 var num = parseInt(variante())
 
 function variante() {
