@@ -44,25 +44,25 @@ function variante() {
    return num   
 }
 
-const numVar = parseInt(varianteResp())
+const numVar = parseInt(0) //parseInt(varianteResp())
 const numVar2 = parseInt(varianteResp2())
 
-function varianteResp(){
-    let x = Math.random() * (3 - 0) + 0;
+/*function varianteResp(){
+    let x = parseInt(Math.random() * (4 - 0) + 0);
     return x
-}
+} */
 function varianteResp2(){
-    let x = Math.random() * (3 - 0) + 0;
-    if( x != numVar){
+    let x = parseInt(Math.random() * (4 - 0) + 0);
+    if( x !== numVar){
+        console.log(x == numVar)
         return x
     } else {
-        while ( x = numVar){
-        x = Math.random() * (3 - 0) + 0;
-        let y = x
-        return y
-        }
+        do {
+        x = parseInt(Math.random() * (3 - 0) + 0);
+        return x
+        } while( x == numVar)
     }
-}
+}console.log(numVar2 , numVar)
 
 console.log(num)
 function novaPergunta(){
