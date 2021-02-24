@@ -19,7 +19,7 @@ const perguntas = [
         respostas = [ 'Prado', 'Japão', 'São Paulo', 'Brasília']
     ],
     p3 = [
-        pergunta = 'Em que país fica o Hawaii',
+        pergunta = 'Em que país fica o Hawaii?',
         respostas = [ 'Brasil', 'Congo', 'India', 'USA']
     ]
 ]
@@ -44,27 +44,24 @@ function variante() {
    return num   
 }
 
-const numVar = parseInt(0) //parseInt(varianteResp())
+const numVar = parseInt(varianteResp())
 const numVar2 = parseInt(varianteResp2())
 
-/*function varianteResp(){
+function varianteResp(){
     let x = parseInt(Math.random() * (4 - 0) + 0);
     return x
-} */
+}
 function varianteResp2(){
     let x = Math.trunc(Math.random() * (4 - 0) + 0);
     if( x !== numVar){
-        console.log(x == numVar)
         return x
     } else {
         do {
-            console.log(x == numVar)
             x = Math.trunc(Math.random() * (4 - 0) + 0);
         } while( x == numVar)
         return x
     }
-}console.log(numVar2 , numVar)
-
+}
 console.log(num)
 function novaPergunta(){
     let i = 0
