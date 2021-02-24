@@ -1,4 +1,6 @@
-/*Crianto array de perguntas*/
+//-------------------------
+/*seleções do HTML */
+
 let iniproj = document.querySelector('.comecar')
 let perg = document.querySelector('.pergunta')
 let respA = document.querySelector('.respostaA')
@@ -9,6 +11,9 @@ let respD = document.querySelector('.respostaD')
 iniproj.onclick = function(){
     ini()
 } 
+
+//----------------------------------
+/*Criando array de perguntas*/
 const perguntas = [
     p1 = [
         pergunta = "Qual sobrenome no Mickey, desenho da Disney?",
@@ -23,6 +28,9 @@ const perguntas = [
         respostas = [ 'Brasil', 'Congo', 'India', 'USA']
     ]
 ]
+
+//----------------------------
+/*Função para partida do jogo, ela interliga com a próxima etapa que são as funções de alternar as pergultas aleatóriamente*/
 function ini(){
     pergnov = perguntas[num][0]
     perg.innerHTML = pergnov
