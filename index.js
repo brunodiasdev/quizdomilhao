@@ -28,7 +28,7 @@ function ini(){
     perg.innerHTML = pergnov
     respA.innerHTML = perguntas[num][1][numVar]
     respB.innerHTML = perguntas[num][1][numVar2]
-    respC.innerHTML = perguntas[num][1][numVar]
+    respC.innerHTML = perguntas[num][1][numVar3]
     respD.innerHTML = perguntas[num][1][numVar]
 }
 
@@ -46,6 +46,7 @@ function variante() {
 
 const numVar = parseInt(varianteResp())
 const numVar2 = parseInt(varianteResp2())
+const numVar3 = parseInt(varianteResp3())
 
 function varianteResp(){
     let x = parseInt(Math.random() * (4 - 0) + 0);
@@ -62,6 +63,19 @@ function varianteResp2(){
         return x
     }
 }
+
+function varianteResp3(){
+    let x = Math.trunc(Math.random() * (4 - 0) + 0);
+    if( x !== numVar && x !== numVar2){
+        return x
+    } else{
+        while (x == numVar && x == numVar2){
+            x = Math.trunc(Math.random() * (4 - 0) + 0);
+        }
+        return x
+    }
+}
+
 console.log(num)
 function novaPergunta(){
     let i = 0
