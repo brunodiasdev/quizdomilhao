@@ -60,8 +60,8 @@ function varianteResp2(){
         do {
             console.log(x == numVar)
             x = Math.trunc(Math.random() * (4 - 0) + 0);
-            return x
-        } while( x === numVar)
+        } while( x == numVar)
+        return x
     }
 }console.log(numVar2 , numVar)
 
