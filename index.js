@@ -52,15 +52,16 @@ const numVar2 = parseInt(varianteResp2())
     return x
 } */
 function varianteResp2(){
-    let x = parseInt(Math.random() * (4 - 0) + 0);
+    let x = Math.trunc(Math.random() * (4 - 0) + 0);
     if( x !== numVar){
         console.log(x == numVar)
         return x
     } else {
         do {
-        x = parseInt(Math.random() * (3 - 0) + 0);
-        return x
-        } while( x == numVar)
+            console.log(x == numVar)
+            x = Math.trunc(Math.random() * (4 - 0) + 0);
+            return x
+        } while( x === numVar)
     }
 }console.log(numVar2 , numVar)
 
