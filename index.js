@@ -29,7 +29,7 @@ function ini(){
     respA.innerHTML = perguntas[num][1][numVar]
     respB.innerHTML = perguntas[num][1][numVar2]
     respC.innerHTML = perguntas[num][1][numVar3]
-    respD.innerHTML = perguntas[num][1][numVar]
+    respD.innerHTML = perguntas[num][1][numVar4]
 }
 
 function alter(){
@@ -43,10 +43,12 @@ function variante() {
    let num = x
    return num   
 }
-
+//---------------------------------
+/* Funções que servem para de forma "ramdomizada" alternar as perguntas.*/ 
 const numVar = parseInt(varianteResp())
 const numVar2 = parseInt(varianteResp2())
 const numVar3 = parseInt(varianteResp3())
+const numVar4 = parseInt(varianteResp4())
 
 function varianteResp(){
     let x = parseInt(Math.random() * (4 - 0) + 0);
@@ -69,12 +71,25 @@ function varianteResp3(){
     if( x !== numVar && x !== numVar2){
         return x
     } else{
-        while (x == numVar && x == numVar2){
+        while (x == numVar || x == numVar2){
             x = Math.trunc(Math.random() * (4 - 0) + 0);
         }
         return x
     }
 }
+
+function varianteResp4(){
+    let x = Math.trunc(Math.random() * (4 - 0) + 0);
+    if( x !== numVar && x !== numVar2 && x !== numVar3){
+        return x
+    } else{
+        while (x == numVar || x == numVar2 || x == numVar3){
+            x = Math.trunc(Math.random() * (4 - 0) + 0);
+        }
+        return x
+    }
+}
+//---------------------------------------------
 
 console.log(num)
 function novaPergunta(){
