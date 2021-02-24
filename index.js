@@ -53,12 +53,14 @@ function varianteResp(){
 }
 function varianteResp2(){
     let x = Math.random() * (3 - 0) + 0;
-    if( x = numVar){
-        for(c = 0; )
+    if( x != numVar){
+        /*for(c = 0; x != numVar; c++){
             let x = Math.random() * (3 - 0) + 0;
             return x
-    } else {
+        }*/
         return x
+    } else {
+        let x = Math.random() * (3 - 0) + 0;
     }
 }
 
