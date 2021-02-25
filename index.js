@@ -12,7 +12,7 @@ iniproj.onclick = function(){
     ini()
 } 
 
-//----------------------------------
+//-----------------------------------
 /*Criando array de perguntas*/
 const perguntas = [
     p1 = [
@@ -40,11 +40,7 @@ function ini(){
     respD.innerHTML = perguntas[num][1][numVar4]
 }
 
-function alter(){
-    
-}
-
-var num = parseInt(variante())
+const num = parseInt(variante())
 
 function variante() {
    let x = Math.random() * (perguntas.length - 0) + 0;
