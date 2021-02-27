@@ -93,16 +93,3 @@ function varianteResp4(){
         return x
     }
 }
-//---------------------------------------------
-
-console.log(num)
-function novaPergunta(){
-    let i = 0
-    return i = Math.random() * (perguntas.length - 0) + 0;
-    
-    /*for(i=0; i < perguntas.length; i++){
-        return i
-    }*/
-
-}
-console.log(perguntas.length)
