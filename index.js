@@ -93,3 +93,4 @@ function varianteResp4(){
         return x
     }
 }
+//s
