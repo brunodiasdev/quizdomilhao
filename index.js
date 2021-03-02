@@ -94,6 +94,12 @@ function varianteResp4(){
     }
 }
 //s
+
+let letraA = document.querySelector('.letraA')
+let letraB = document.querySelector('.letraB')
+let letraC = document.querySelector('.letraC')
+let letraD = document.querySelector('.letraD')
+
 function respCerta(){
-    
+    if()
 }
