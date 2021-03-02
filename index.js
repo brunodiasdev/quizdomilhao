@@ -94,3 +94,6 @@ function varianteResp4(){
     }
 }
 //s
+function respCerta(){
+    
+}
