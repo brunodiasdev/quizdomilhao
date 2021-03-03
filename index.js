@@ -93,7 +93,7 @@ function varianteResp4(){
         return x
     }
 }
-//Função para determinar a resposta certa.
+//Função para determinar a resposta certa..
 
 let letraA = document.querySelector('.letraA')
 let letraB = document.querySelector('.letraB')
